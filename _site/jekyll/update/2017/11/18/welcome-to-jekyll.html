@@ -82,22 +82,55 @@
   <div class="post-content" itemprop="articleBody">
     <p>Hi Everyone,</p>
 
-<p>Today, I want to share my experience about building websites on <strong>Github Pages</strong> with <strong>jekyll</strong>. Actually, I have a website on Wordpress in Turkish. But also I wanted to build another one in English to improve my English writing skill and make my contents public not local. And then, I searched for platform for my website. I didn’t want to use Wordpress again because I experienced it. So I decided to try another one.While I was searhing, I found GitHub Pages. It gives you hosting for your website and project website from your repository.That’s perfect !. So I decided to build my website with GitHub Pages.And I learned Github Pages support a thing named jekyll. I didn’t know what “jekyll” is . After a quick search, I learned <code class="highlighter-rouge">"jekyll" is a blog-aware, static site generator in Ruby</code>. Waitt What ? What is the meaning of <code class="highlighter-rouge">blog-aware</code> and <code class="highlighter-rouge">static site generator</code> ? So, Let’s learn these terms.</p>
+<p>Today, I want to share my experience about building websites on <strong>Github Pages</strong> with <strong>jekyll</strong>. Actually, I have a website on Wordpress in Turkish. But also I wanted to build another one in English to improve my English writing skill and make my contents public not local. And then, I searched for platform for my website. I didn’t want to use Wordpress again because I experienced it. So I decided to try another one.While I was searhing, I found GitHub Pages. It gives you free hosting for your website or project website from your repository.That’s perfect !. So I decided to build my website with GitHub Pages.And I learned Github Pages support a thing named jekyll. I didn’t know what “jekyll” is . After a quick search, I learned <code class="highlighter-rouge">"jekyll" is a blog-aware, static site generator in Ruby</code>. Waitt What ? What is the meaning of <code class="highlighter-rouge">blog-aware</code> and <code class="highlighter-rouge">static site generator</code> ? So first, let’s learn these terms.</p>
 
-<h2 id="blog-aware-">blog-aware ?</h2>
+<h3 id="blog-aware-">Blog-aware ?</h3>
 
 <p><code class="highlighter-rouge">One of Jekyll’s best aspects is that it is “blog aware”. What does this mean, exactly? Well, simply put, it means that blogging is baked into Jekyll’s functionality. If you write articles and publish them online, you can publish and maintain a blog simply by managing a folder of text-files on your computer. Compared to the hassle of configuring and maintaining databases and web-based CMS systems, this will be a welcome change!</code></p>
 
-<p>Definition from jekyll offical <a href="https://jekyllrb.com/docs/posts/">website</a></p>
+<p>Definition from jekyll official <a href="https://jekyllrb.com/docs/posts/">website</a></p>
 
-<h2 id="static-site-generator-">static site generator ?</h2>
+<h3 id="static-site-generator-">Static site generator ?</h3>
 
 <p><code class="highlighter-rouge">A static site generator takes source files and generates an entirely static website.</code> from quite easy to understand content on <a href="https://learn.cloudcannon.com/jekyll/why-use-a-static-site-generator/">here</a> and also there are videos about it.</p>
 
-<p>This is enough for now. I will add also how I build this website later.</p>
+<p>After these terms, we can start building our website but we need to download first <strong>Ruby</strong> and then <strong>Bundler</strong>.
+You can download <strong>Ruby</strong> from <a href="https://www.ruby-lang.org/en/downloads/">here</a> and download bundler like below.</p>
 
-<p>Enes Köksalmış.</p>
+<p><img src="http://localhost:4000/assets/screenshot1.png" alt="Screenshot1" /></p>
 
+<p>After that, we need to create a repository for our website files. You can do it easily with <code class="highlighter-rouge">git init reponame</code> command in any path.Then, we need to install <code class="highlighter-rouge">Jekyll</code>. We can do it with <code class="highlighter-rouge">bundler</code> that downloaded before but we need to create a file named <code class="highlighter-rouge">Gemfile</code> and then we need to add these two lines in it.</p>
+
+<p><img src="http://localhost:4000/assets/screenshot4.png" alt="Screenshot2" /></p>
+
+<p>Now, we can download <code class="highlighter-rouge">Jekyll</code> and its dependencies based on our <code class="highlighter-rouge">Gemfile</code> content like below.</p>
+
+<p><img src="http://localhost:4000/assets/screenshot5.png" alt="Screenshot3" /></p>
+
+<p>Okay, now we did all things before the create our website contents.All things are okay.</p>
+
+<p>Now we need to create some files and fill in these files because if you remember <code class="highlighter-rouge">Jekyll</code> is a static-site generator that means we will give some files to <code class="highlighter-rouge">Jekyll</code> and then our website will be created based on these files. These files and <code class="highlighter-rouge">Jekyll</code> file structure is explained in <a href="https://jekyllrb.com/docs/structure/">here</a>.So, we need to create all them step by step but I will not show them all. At the end you are suppose to have a repository like below. These files also this website’s files.</p>
+
+<p><img src="http://localhost:4000/assets/screenshot6.png" alt="Screenshot3" /></p>
+
+<p>A much more nice screenshot from official site is below. In my case I didn’t use all of files because I didn’t need them all. But it may necessary in your case. Before you start building your website. You should define your requirements first.</p>
+
+<p><img src="http://localhost:4000/assets/screenshot7.png" alt="Screenshot3" /></p>
+
+<p>And also, If you want to know each files role in website you can learn from <a href="https://jekyllrb.com/docs/structure/">here</a>. It is well explained and clear.</p>
+
+<h3 id="publishing-the-website">Publishing The Website</h3>
+
+<p>If you want to publish your website on The Internet. Just upload your files in a repository that named <strong>username.github.io</strong>. And <code class="highlighter-rouge">GitHub</code> will do the rest. After some time, you can check your website from <strong>usernama.github.io</strong>. For example, this website’s repository on my GitHub account you can find <a href="https://github.com/koksalmis/koksalmis.github.io">here</a></p>
+
+<h3 id="conclusion">Conclusion</h3>
+<p><code class="highlighter-rouge">Jekyll</code> was a litte bit difficult for me because I had no idea “What is static site generator ?” and “What is Jekyll ?”. And also <code class="highlighter-rouge">Jekyll</code> was a litte bit complex because there are many files and hard to build in locally not like classic(HTML,CSS,Javascript). But after understanding structure of <code class="highlighter-rouge">Jekyl</code> and how it makes easier things, For example publishing posts because in <code class="highlighter-rouge">Jekyll</code> you don’t need to write same HMTL code everytime, I like the mechanism of <code class="highlighter-rouge">Jekyll</code>.</p>
+
+<p>These my thoughts and experience about <code class="highlighter-rouge">Github Pages</code> and <code class="highlighter-rouge">Jekyll</code>.</p>
+
+<p>Thank you</p>
+
+<p>Enes Köksalmış</p>
 
   </div>
 
