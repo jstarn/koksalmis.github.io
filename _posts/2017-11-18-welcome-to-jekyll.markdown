@@ -36,11 +36,11 @@ Okay, now we did all things before the create our website contents.All things ar
 
 Now we need to create some files and fill in these files because if you remember `Jekyll` is a static-site generator that means we will give some files to `Jekyll` and then our website will be created based on these files. These files and `Jekyll` file structure is explained in [here](https://jekyllrb.com/docs/structure/).So, we need to create all them step by step but I will not show them all. At the end you are suppose to have a repository like below. These files also this website's files.
 
-![Screenshot3]({{ "/assets/screenshot6.png" | absolute_url }})
+![Screenshot4]({{ "/assets/screenshot6.png" | absolute_url }})
 
 A much more nice screenshot from official site is below. In my case I didn't use all of files because I didn't need them all. But it may necessary in your case. Before you start building your website. You should define your requirements first.
 
-![Screenshot3]({{ "/assets/screenshot7.png" | absolute_url }})
+![Screenshot5]({{ "/assets/screenshot7.png" | absolute_url }})
 
 And also, If you want to know each files role in website you can learn from [here](https://jekyllrb.com/docs/structure/). It is well explained and clear.
 
@@ -48,11 +48,11 @@ And also, If you want to know each files role in website you can learn from [her
 
 ### Publishing The Website
 
-If you want to publish your website on The Internet. Just upload your files in a repository that named **username.github.io**. And `GitHub` will do the rest. After some time, you can check your website from **usernama.github.io**. For example, this website's repository on my GitHub account you can find [here](https://github.com/koksalmis/koksalmis.github.io)
+If you want to publish your website on The Internet. Just upload your files in a repository that named **username.github.io**. And `GitHub` will do the rest. After some time, you can check your website from **username.github.io**. For example, this website's repository on my GitHub account you can find [here](https://github.com/koksalmis/koksalmis.github.io)
 
 
 ### Conclusion
-`Jekyll` was a litte bit difficult for me because I had no idea "What is static site generator ?" and "What is Jekyll ?". And also `Jekyll` was a litte bit complex because there are many files and hard to build in locally not like classic(HTML,CSS,Javascript). But after understanding structure of `Jekyl` and how it makes easier things, For example publishing posts because in `Jekyll` you don't need to write same HMTL code everytime, I like the mechanism of `Jekyll`. 
+`Jekyll` was a litte bit difficult for me because I had no idea "What is static site generator ?" and "What is Jekyll ?". And also `Jekyll` was a litte bit complex because there are many files and hard to build in locally not like classic(HTML,CSS,Javascript). But after understanding structure of `Jekyll` and how it makes easier things, For example publishing posts in `Jekyll`.You don't need to write same HMTL code everytime for your each post and like it.
 
 These my thoughts and experience about `Github Pages` and `Jekyll`.
 
