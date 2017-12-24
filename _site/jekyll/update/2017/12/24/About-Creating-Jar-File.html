@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>thoughts, projects, interests</title>
-  <meta name="description" content="academic life from the point of view of the student, projects, interests, and many things that I experienced.">
+  <title>Java(Maven) projemizden .jar dosyası nasıl oluşturuyoruz?</title>
+  <meta name="description" content="Merhaba Yıldız Tozları,">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="canonical" href="http://localhost:4000/jekyll/update/2017/12/24/About-Creating-Jar-File.html">
   <link rel="alternate" type="application/rss+xml" title="thoughts, projects, interests" href="/feed.xml">
   
   
@@ -67,47 +67,72 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Java(Maven) projemizden .jar dosyası nasıl oluşturuyoruz?</h1>
+    <p class="post-meta">
+      <time datetime="2017-12-24T12:19:58+03:00" itemprop="datePublished">
+        
+        Dec 24, 2017
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>Merhaba Yıldız Tozları,</p>
+
+<p>Daha önce CLI nedir ve nasıl projemizde kullanırız üzerine yazı yazmıştım.Yarın ödevin son günü ama :) Bugün belki ödevin kodunu yazmış fakat nasıl jar dosyası üreteceğini konusunda zorlananlar için nasıl jar dosyası oluşturabileceklerini göstermeye çalışacağım. Öncelikle üretmeye çalıştığımız şey ne ve ne içeriyor bilmemiz lazım.Onun için tanım ile başlayalım.</p>
+
+<h4 id="jar-dosyası-nedir"><strong>JAR dosyası nedir?</strong></h4>
+
+<p><a href="https://www.wikiwand.com/en/JAR_(file_format)">Buradan</a> da okuyabileceğiniz gibi.(Eğer Wikipedia’ya erişemiyorsanız. <strong>Wikiwand</strong> eklentisini kullanabilirsiniz.Gayet hoş bir görünüm sağlıyor ve Wikipedia yasağını(!) aşıyor.) JAR birçok java sınıf dosyasını, kılavuz verisini(metadata) ve proje kaynaklarını(metin, resim, vs. gibi) dağıtım için kümeleyen, çalıştırılabilir bir paket fosya formatı. Yani bizim projemizle ilgili her şey bu jar dosyasının içinde olacak.Artık JAR’ın ne olduğunu öğrendiğimize göre üretmeye çalışabiliriz.</p>
+<h4 id="jar-dosyası-javamaven-projesinde-nasıl-üretilir"><strong>JAR dosyası Java(Maven) projesinde nasıl üretilir?</strong></h4>
+
+<p>Öncelikle <strong><em>pom.xml</em></strong> dosyamıza jar dosyası üretmek için gerekli olan direktifleri yazıyoruz.Aşağıda screenshotta <strong>öğrendiğim kadarıyla</strong>, yorum ile detaylandırdım.Detaylı incelemenizi öneriyorum.</p>
+
+<p><img src="http://localhost:4000/assets/JAR-Blogpost/screenshot1.png" alt="Screenshot1" />
+(Bu direktifleri daha önce <strong>JewelCLI</strong> için eklediğimiz direktiflerin altına yazıyoruz unutmayın.)</p>
+
+<p>Gerekli direktifleri yazdıktan sonra jar dosyasını oluşturmak için aşağıdaki adımları takip etmeniz gerekiyor.</p>
+
+<p><strong>Not:</strong>Bu adımları izlediğim bir video’da öğrendim belki başka yolla da üretiliyordur ille böyle olacak diye bir şey şöylemiyorum.</p>
+
+<h4 id="adım-1"><strong>Adım 1</strong></h4>
+
+<p>Önce View–&gt;Tool Window–&gt;Maven Projects’e tıklayın, tıkladıktan sonra sağ tarafta aşağıdaki gibi bir görünüm elde edeceksiniz.</p>
+
+<p><img src="http://localhost:4000/assets/JAR-Blogpost/screenshot2.png" alt="Screenshot2" /></p>
+
+<h4 id="adım-2"><strong>Adım 2</strong></h4>
+
+<p>Şimdi bunlardan sırayla <strong><em>clean</em></strong>, <strong><em>install</em></strong> ve <strong><em>assembly::assembly</em></strong>‘e çift tıklayarak ya da yukardaki çalıştır butonuna(Yeşil Üçgen) basarak çalıştırın.</p>
+
+<h4 id="adım-3"><strong>Adım 3</strong></h4>
+
+<p>Çalıştırdıktan sonra bunları dosya ağacınızda <strong><em>target</em></strong> adlı bir dosyanın oluştuğunu  ve bunun içinde jar dosyanızın oluştuğunu göreceksiniz aşağıdaki gibi.</p>
+
+<p><img src="http://localhost:4000/assets/JAR-Blogpost/screenshot3.png" alt="Screenshot3" /></p>
+
+<h3 id="adım-4"><strong>Adım 4</strong></h3>
+
+<p>Jar dosyanıza <strong>trendin.jar</strong>‘a sağ tıklayınca açılan seçeneklerden <strong>Show in Folders</strong>‘a tıklayarak ya da direkt projenizin bulunduğu dosyaya giderek ulaşabilirsiniz.Jar dosyanızı çalıştırmak içinse sadece <strong>java -jar trending.jar gerekliargüman1 gerekliargüman2 …</strong> yapmanız yeterli. Aşağıda nasıl yapıldığını görebilirsiniz.</p>
+
+<p><img src="http://localhost:4000/assets/JAR-Blogpost/screenshot4.png" alt="Screenshot4" /></p>
+
+<p>Aynı dizin altında <strong><em>all_tweets.txt</em></strong> dosyası olmadığı için sadece argümanları bastırdı o kadar.Buraya kadar yazdığım kodlara <a href="https://github.com/koksalmis/trending">github hesabımdan</a> ulaşabilirsiniz.</p>
+
+<p><strong>Not:</strong>Ödevin deadline’ı geçtikten sonra eğer vaktim olursa, ödevin tamamlanmış halini github hesabımda paylaşacağım.</p>
+
+<p>Teşekkür Ederim.</p>
+
+<p>Enes Köksalmış</p>
+
+
+  </div>
+
   
-  
-
-
-  <ul class="post-list">
-    
-      <li>
-        
-        <span class="post-meta">Dec 24, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/12/24/About-Creating-Jar-File.html">Java(Maven) projemizden .jar dosyası nasıl oluşturuyoruz?</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Dec 22, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/12/22/About-CLI.html">CLI(Command Line Interface) nedir ve JAVA(Maven) projemize nasıl ekleriz ?</a>
-        </h2>
-      </li>
-    
-      <li>
-        
-        <span class="post-meta">Nov 18, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/11/18/welcome-to-jekyll.html">How to build websites on GitHub Pages with jekyll</a>
-        </h2>
-      </li>
-    
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-
-</div>
+</article>
 
       </div>
     </main>
