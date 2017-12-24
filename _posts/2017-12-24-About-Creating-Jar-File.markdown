@@ -39,7 +39,7 @@ Gerekli direktifleri yazdıktan sonra jar dosyasını oluşturmak için aşağı
 
 ![Screenshot3]({{ "/assets/JAR-Blogpost/screenshot3.png" | absolute_url }})
 
-### **Adım 4**
+#### **Adım 4**
 
 Jar dosyanıza **trendin.jar**'a sağ tıklayınca açılan seçeneklerden **Show in Folders**'a tıklayarak ya da direkt projenizin bulunduğu dosyaya giderek ulaşabilirsiniz.Jar dosyanızı çalıştırmak içinse sadece **java -jar trending.jar gerekliargüman1 gerekliargüman2 ...** yapmanız yeterli. Aşağıda nasıl yapıldığını görebilirsiniz.
 
