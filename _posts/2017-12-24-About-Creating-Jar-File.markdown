@@ -41,7 +41,7 @@ Gerekli direktifleri yazdıktan sonra jar dosyasını oluşturmak için aşağı
 
 #### **Adım 4**
 
-Jar dosyanıza **trendin.jar**'a sağ tıklayınca açılan seçeneklerden **Show in Folders**'a tıklayarak ya da direkt projenizin bulunduğu dosyaya giderek ulaşabilirsiniz.Jar dosyanızı çalıştırmak içinse sadece **java -jar trending.jar gerekliargüman1 gerekliargüman2 ...** yapmanız yeterli. Aşağıda nasıl yapıldığını görebilirsiniz.
+Jar dosyanıza **trending.jar**'a sağ tıklayınca açılan seçeneklerden **Show in Folders**'a tıklayarak ya da direkt projenizin bulunduğu dosyaya giderek ulaşabilirsiniz.Jar dosyanızı çalıştırmak içinse sadece **java -jar trending.jar gerekliargüman1 gerekliargüman2 ...** yapmanız yeterli. Aşağıda nasıl yapıldığını görebilirsiniz.
 
 ![Screenshot4]({{ "/assets/JAR-Blogpost/screenshot4.png" | absolute_url }})
 
