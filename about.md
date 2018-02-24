@@ -13,6 +13,6 @@ On the other hand, In my spare time I write some thoughts on [in my blog](https:
 Note: And also I will do fitness as soon as possible. I wrote here for the record :)
 
 [See & Download My Resume](
-https://mega.nz/#!Y2JyVahL!cDdgtc0wQ38wMnrgnPdzDD0FhrgrgWNpQNSNuE5xWnc
+https://mega.nz/#!EzhlTTjI!qSJAJU14y9p3RyzYQh8faNiIssOAvcDnxztD1xHbFrM
 )
 
